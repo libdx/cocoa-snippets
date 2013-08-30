@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E1E9F5D417BE4BF200F47371 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E9F5D317BE4BF200F47371 /* Foundation.framework */; };
-		E1E9F5D917BE4BF200F47371 /* CocoaSnippets.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1E9F5D817BE4BF200F47371 /* CocoaSnippets.h */; };
-		E1E9F5DB17BE4BF200F47371 /* CocoaSnippets.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9F5DA17BE4BF200F47371 /* CocoaSnippets.m */; };
 		E1E9F5E317BE4C2200F47371 /* NSInputStream+CocoaSnippets.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9F5E217BE4C2200F47371 /* NSInputStream+CocoaSnippets.m */; };
 		E1E9F5E617BE53B700F47371 /* NSOutputStream+CocoaSnippets.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9F5E517BE53B700F47371 /* NSOutputStream+CocoaSnippets.m */; };
 /* End PBXBuildFile section */
@@ -21,18 +19,16 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				E1E9F5D917BE4BF200F47371 /* CocoaSnippets.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E11C560917D0993500742115 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		E1E9F5D017BE4BF200F47371 /* libCocoaSnippets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaSnippets.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E9F5D317BE4BF200F47371 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E1E9F5D717BE4BF200F47371 /* CocoaSnippets-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaSnippets-Prefix.pch"; sourceTree = "<group>"; };
-		E1E9F5D817BE4BF200F47371 /* CocoaSnippets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaSnippets.h; sourceTree = "<group>"; };
-		E1E9F5DA17BE4BF200F47371 /* CocoaSnippets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaSnippets.m; sourceTree = "<group>"; };
 		E1E9F5E117BE4C2200F47371 /* NSInputStream+CocoaSnippets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInputStream+CocoaSnippets.h"; sourceTree = "<group>"; };
 		E1E9F5E217BE4C2200F47371 /* NSInputStream+CocoaSnippets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInputStream+CocoaSnippets.m"; sourceTree = "<group>"; };
 		E1E9F5E417BE53B700F47371 /* NSOutputStream+CocoaSnippets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOutputStream+CocoaSnippets.h"; sourceTree = "<group>"; };
@@ -80,12 +76,11 @@
 			isa = PBXGroup;
 			children = (
 				E1E9F5D617BE4BF200F47371 /* Supporting Files */,
-				E1E9F5D817BE4BF200F47371 /* CocoaSnippets.h */,
-				E1E9F5DA17BE4BF200F47371 /* CocoaSnippets.m */,
 				E1E9F5E117BE4C2200F47371 /* NSInputStream+CocoaSnippets.h */,
 				E1E9F5E217BE4C2200F47371 /* NSInputStream+CocoaSnippets.m */,
 				E1E9F5E417BE53B700F47371 /* NSOutputStream+CocoaSnippets.h */,
 				E1E9F5E517BE53B700F47371 /* NSOutputStream+CocoaSnippets.m */,
+				E11C560917D0993500742115 /* Macros.h */,
 			);
 			path = CocoaSnippets;
 			sourceTree = "<group>";
@@ -149,7 +144,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1E9F5DB17BE4BF200F47371 /* CocoaSnippets.m in Sources */,
 				E1E9F5E317BE4C2200F47371 /* NSInputStream+CocoaSnippets.m in Sources */,
 				E1E9F5E617BE53B700F47371 /* NSOutputStream+CocoaSnippets.m in Sources */,
 			);
@@ -254,6 +248,7 @@
 				E1E9F5E017BE4BF200F47371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
